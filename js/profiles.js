@@ -147,7 +147,7 @@ pinInput.addEventListener("input", () => {
 });
 
 // PIN submission
-pinForm.addEventListener("submit", (event) => {
+pinForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const enteredPin = pinInput.value;
