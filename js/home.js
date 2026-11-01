@@ -7,7 +7,7 @@ const STORAGE_KEY = "currentProfile";
 // HTML elements
 const loadingScreen = document.getElementById("loading-screen");
 
-const profileAvatar = document.getElementById("profile-avatar");
+const profileAvatar = document.getElementById("profile-avatar-home");
 const profileName = document.getElementById("profile-name");
 const welcomeMessage = document.getElementById("welcome-message");
 
