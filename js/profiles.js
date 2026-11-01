@@ -38,7 +38,7 @@ async function loadProfiles() {
             card.className = "profile-card";
             
             const avatarContainer = document.createElement("div");
-            avatarContainer.className = "profile-avatar"
+            avatarContainer.className = "profile-avatar";
             
             const avatar = document.createElement("img");
             avatar.src = profile.avatar;
@@ -106,7 +106,7 @@ async function restoreSession() {
 
         if (
             profileSnapshot.exists() &&
-            profileSnapshot.data().active == true
+            profileSnapshot.data().active === true
         ) {
             window.location.replace("home.html");
             return;
@@ -152,7 +152,7 @@ pinForm.addEventListener("submit", async (event) => {
 
     const enteredPin = pinInput.value;
     
-    if (!/^\d{4}$/.test(pinInput.value)) {
+    if (!/^\d{4}$/.test(enteredPin)) {
         pinError.textContent = "Please enter your 4-digit PIN.";
         return;
     }
@@ -172,7 +172,7 @@ pinForm.addEventListener("submit", async (event) => {
         const profileSnapshot = await getDoc(profileRef);
 
         if (!profileSnapshot.exists()) {
-            pinError.textContent = "This profile no longers exists.";
+            pinError.textContent = "This profile no longer exists.";
             return;
         }
 
