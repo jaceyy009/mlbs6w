@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profiles</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+        <div id="loading-screen">
+            <div class="loading-spinner"></div>
+            <p>Loading...</p>
+        </div>
+
+        <main class="profile-page">
+            <header class="profile-header">
+                <h1>Who's Watching?</h1>
+                <p>Select your profile to continue.</p>
+            </header>
+
+            <section class="profile-list" id="profile-list">
+                <!-- Profiles will be loaded from Firestore -->
+            </section>
+        </main>
+        
+        <div id="pin-overlay" class="pin-overlay hidden">
+            <div class="pin-container">
+                <button id="pin-close" class="pin-close" aria-label="Close">&times;</button>
+                
+                <h2 id="pin-profile-name">Profile</h2>
+                <p>Enter your 4-digit PIN to continue.</p>
+                
+                <form id="pin-form">
+                    <input type="password" id="pin-input" maxlength="4" inputmode="numeric" pattern="[0-9]{4}" placeholder="••••" autocomplete="off" required>
+                    <button type="submit" id="pin-submit">Continue</button>
+                    <p id="pin-error"></p>
+                </form>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+        <script type="module" src="js/profiles.js"></script>
+    </body>
+</html>
