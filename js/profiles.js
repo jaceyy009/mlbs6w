@@ -34,7 +34,7 @@ async function loadProfiles() {
             
             const card = document.createElement("div");
             card.className = "profile-card";
-            card.dataset.profileId = document.id;
+            card.dataset.profileId = doc.id;
             
             const avatarContainer = document.createElement("div");
             avatarContainer.className = "profile-avatar"
@@ -52,7 +52,7 @@ async function loadProfiles() {
             card.appendChild(name);
             
             card.addEventListener("click", () => {
-                openPinOverlay(document.id, profile.displayName);
+                openPinOverlay(doc.id, profile.displayName);
             });
             
             profileList.appendChild(card);
