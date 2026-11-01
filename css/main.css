@@ -234,7 +234,8 @@ body {
     border: 1px solid var(--accent);
 }
 
-#pin-submit {
+#pin-submit,
+#sign-out-button {
     background: var(--background);
     border: 1px solid var(--profile-background);
     border-radius: 8px;
@@ -246,7 +247,9 @@ body {
     transition: 0.2s ease-in-out;
 }
 
-#pin-submit:hover {
+#pin-submit:hover,
+#sign-out-button:hover {
     border: 1px solid var (--accent);
     
 }
+
