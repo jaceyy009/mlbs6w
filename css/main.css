@@ -249,6 +249,17 @@ body {
 
 .site-header {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%
+    padding: 16px 32px;
+    box-sizing: border-box;
+}
+
+.account-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 #profile-avatar-home {
