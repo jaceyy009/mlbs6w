@@ -30,7 +30,7 @@ async function loadProfiles() {
         profileList.innerHTML = "";
         
         snapshot.forEach((doc) => {
-            const profile = document.data();
+            const profile = doc.data();
             
             const card = document.createElement("div");
             card.className = "profile-card";
