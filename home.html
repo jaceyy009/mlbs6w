@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/main.css">
-  </head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
 
-  <body>
-    <div id="loading-screen">
+    <body>
+        <div id="loading-screen">
             <div class="loading-spinner"></div>
             <p>Loading...</p>
         </div>
-  </body>
+        
+        <header class="site-header">
+            <div class="account-info">
+                <img id="profile-avatar" src="" alt="Profile avatar">
+                <span id="profile-name">Loading...</span>
+            </div>
+            
+            <button id="sign-out-button" type="button">Sign Out</button>
+        </header>
+        
+        <main>
+            <section class="welcome-section">
+                <h1 id="welcome-message">Welcome!</h1>
+                <p>Which episode would you like to watch?</p>
+            </section>
+            
+            <section class="episode-section">
+                <h2>Episodes</h2>
+                <div id="episode-list">
+                    
+                    <!-- Episodes will be loaded here -->
+                </div>
+            </section>
+        </main>
+        
+        <script type="module" src="js/home.js"></script>
+        
+    </body>
 </html>
