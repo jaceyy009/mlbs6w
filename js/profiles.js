@@ -9,6 +9,7 @@ const pinProfileName = document.getElementById("pin-profile-name");
 const pinInput = document.getElementById("pin-input");
 const pinClose = document.getElementById("pin-close");
 const pinForm = document.getElementById("pin-form");
+const pinError = document.getElementById("pin-error");
 
 const loadingScreen = document.getElementById("loading-screen");
 
