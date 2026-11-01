@@ -179,7 +179,7 @@ pinForm.addEventListener("submit", async (event) => {
         const profile = profileSnapshot.data();
 
         if (profile.active !== true) {
-            pinError.textContent = "This profile is inactive.");
+            pinError.textContent = "This profile is inactive.";
             return;
         }
 
