@@ -98,7 +98,7 @@ function loadSubtitles(subtitles = []) {
 
     if (selectedIndex === -1) {
       video.textTracks[0] &&
-        (video.textTracks[0].mode = "disabled";
+        video.textTracks[0].mode = "disabled";
       return;
     }
 
