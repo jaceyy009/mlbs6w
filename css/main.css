@@ -310,6 +310,7 @@ body {
     border: 1px solid rgba(65, 195, 250, 0.12);
     border-radius: 12px;
     transition: all 0.2s ease;
+    cursor: pointer;
 }
 
 .episode-card:hover {
