@@ -285,3 +285,109 @@ body {
     
 }
 
+.episode-section {
+    padding: 42px 32px 40px;
+}
+
+.episode-section h2 {
+    margin: 0 0 24px;
+    color: var(--text);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.episode-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 28px 22px;
+    width: 100%;
+}
+
+.episode-card {
+    min-width: 0;
+    overflow: hidden;
+    background: var(--background-secondary);
+    border: 1px solid rgba(65, 195, 250, 0.12);
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+.episode-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.episode-thumbnail {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background: var(--profile-background);
+}
+
+.episode-details {
+    padding: 16px;
+}
+
+.episode-title {
+    margin: 0 0 8px;
+    color: var(--text);
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.episode-description {
+    margin: 0 0 14px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.episode-duration {
+    margin: 0;
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.episode-loading,
+.episode-list p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+    .episode-section {
+        padding: 20px 26px 32px;
+    }
+
+    .episode-section h2 {
+        margin-bottom: 18px;
+        font-size: 1.4rem;
+    }
+
+    .episode-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px 12px;
+    }
+
+    .episode-details {
+        padding: 12px;
+    }
+
+    .episode-title {
+        font-size: 0.95rem;
+    }
+
+    .episode-description {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .episode-list {
+        grid-template-columns: 1fr;
+    }
+}
