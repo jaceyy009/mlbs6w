@@ -75,6 +75,21 @@ async function loadEpisodes() {
 
             const card = document.createElement("article");
             card.className = "episode-card";
+            card.setAttribute("role", "link");
+            card.tabIndex = 0;
+
+            function openEpisode() {
+                window.location.href = `watch.html?id=${encodeURIComponent(episodeDoc.id)}`;
+            }
+
+            card.addEventListener("click", openEpisode);
+
+            card.addEventListener("keydown", (event) => {
+                if (event.key == "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    openEpisode();
+                }
+            });
 
             const endCard = document.createElement("img");
             endCard.className = "episode-end-card";
