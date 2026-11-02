@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Watch</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+    <div id="loading=screen">
+      <div class="loading-spinner"></div>
+      <p>Loading...</p>
+    </div>
+
+    <header class="site-header">
+      <a href="home.html" class="back-link">← Home</a>
+
+      <div class="account-info">
+        <img id="profile-avatar-home" src="" alt="">
+        <span id="profile-name">Loading...</span>
+      </div>
+
+      <button id="sign-out-button" type="button">Sign Out</button>
+    </header>
+
+    <main class="watch-page">
+
+      <div id="video-container" class="video-container">
+        <video id="video-player" playsinline>Your browser does not support video playback.</video>
+
+        <div id="video-error" class="video-error hidden"></div>
+      </div>
+
+      <section class="watch-details">
+        <h1 id="episode-title">Loading episode...</h1>
+        <p id="episode-description"></p>
+        <p id="episode-duration"></p>
+
+        <div class="subtitle-seciton">
+          <label for="subtitle-select">Subtitles</label>
+          <select id="subtitle-select">
+            <option value="-1">Off</option>
+          </select>
+        </div>
+      </section>
+
+    </main>
+
+    <script type="module" src="js/watch.js"></script>
+  </body>
+</html>
